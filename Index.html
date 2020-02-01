@@ -28,7 +28,7 @@
                 <!--Painel-->
                 <div class="rd-navbar-panel">
                   <!--Menu Toggle-->
-                  <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <button style="display: none;" class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--Menu Logo Marca-->
                   <div class="rd-navbar-brand">
                     <!--Logo Marca--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 82px !important; height:46px !important;"><img class="brand-logo-light" src="./Index_files/logo-default-165x48.png" alt="" width="82" height="24"></a>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap toggle-original-elements">
-                    <ul class="rd-navbar-nav">
+                    <ul class="rd-navbar-nav" style="display: none;">
                       <!-- Links do Menu -->
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
                       </li>
@@ -64,7 +64,7 @@
           <div class="row text-center text-xxl-left">
             <div class="col-12 col-xxl-8">
               <h3 class="wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp; color: white;text-shadow: 1px 1px 2px black;">Uma grande variedade de serviços para melhorar os seus negócios.</h3>
-              <div class="big-text wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp; color: white; text-shadow: 1px 1px 2px black;">Mantendo você seguro</div><a class="button button-primary wow fadeInUp" href="Services.html" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Saiba Mais</a>
+              <div class="big-text wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp; color: white; text-shadow: 1px 1px 2px black;">Mantendo você seguro</div><a class="button button-primary wow fadeInUp" href="#servicos" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Saiba Mais</a>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
       <!--Segundo setor (Sobre Nós)-->
       <section class="section section-md bg-default">
         <div class="container text-center">
-          <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">nossos serviços <span class="decorative-element-right"></span></div>
+          <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">nossa qualidade <span class="decorative-element-right"></span></div>
           <h3 class="wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Uma Empresa Que Você Pode Confiar</h3>
           <h4 class="wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Empresa especializada em serviços tercerizados.</h4>
           <h5 class="wow fadeIn text-gray-500" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
@@ -109,9 +109,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <!--Segundo Setor (Serviços)-->
-      <section class="parallax-container" data-parallax-img="images/bg-primary.jpg"><div class="material-parallax parallax"><img src="./images/bg-primary.jpg" alt="" style="display: block; transform: translate3d(-50%, 1px, 0px);"></div>
+      </section><!-- Fim do Segundo Setor (Sobre Nós) -->
+      <!-- Terceiro Setor (Serviços)-->
+      <section id="servicos" class="parallax-container" data-parallax-img="images/bg-primary.jpg"><div class="material-parallax parallax"><img src="./images/bg-primary.jpg" alt="" style="display: block; transform: translate3d(-50%, 1px, 0px);"></div>
         <div class="parallax-content section section-md">
           <div class="container text-center">
             <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Nossos serviços<span class="decorative-element-right"></span></div>
@@ -120,73 +120,78 @@
               <div class="wr1 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                 <!-- Primeiro Produto -->
                 <h5 class="font-weight-bold text-uppercase">Portaria</h5>
-                <p>Mantendo você no controle</p>
+                <p>Possuímos um atendimento cortez e especializado.</p>
               </div>
               <div class="wr2 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
                 <!-- Segundo Produto -->
-                <h5 class="font-weight-bold text-uppercase">Alarm Installation</h5>
-                <p>Increasing your level of protection</p>
+                <h5 class="font-weight-bold text-uppercase">Limpeza e conservação</h5>
+                <p>Profissionais capacitados para topo tipo de limpeza.</p>
               </div>
               <div class="wr3 wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                 <!-- Terceiro Produto -->
-                <h5 class="font-weight-bold text-uppercase">electronic Monitoring</h5>
-                <p>Qualified security solutions</p>
-              </div><span class="icon fl-justicons-shield82 text-primary icon-decorative-2 wow fadeIn" style="visibility: visible; animation-name: fadeIn;"></span>
+                <h5 class="font-weight-bold text-uppercase">Jardinagem</h5>
+                <p>Tornamos as paisagens mais coloridas e belas possiveis.</p>
+              </div>
+              <!-- Icone  -->
+              <span class="icon fl-justicons-shield82 text-primary icon-decorative-2 wow fadeIn" style="visibility: visible; animation-name: fadeIn;"></span>
+              <!-- Quarto Produto -->
               <div class="wr4 wow fadeInLeft" style="visibility: hidden; animation-name: none;">
-                <h5 class="font-weight-bold text-uppercase">Security consulting</h5>
-                <p>Guiding your company’s security</p>
+                <h5 class="font-weight-bold text-uppercase">Recepção</h5>
+                <p>Atendimento ágil e de alta eficiência em sua recepção.</p>
               </div>
+              <!-- Quinto Produto -->
               <div class="wr5 wow fadeIn" style="visibility: hidden; animation-name: none;">
-                <h5 class="font-weight-bold text-uppercase">Risk analysis</h5>
-                <p>Providing advice on your exposure</p>
+                <h5 class="font-weight-bold text-uppercase">Zelador</h5>
+                <p>Treinados e capacitados com um ótimo custo-benefícios.</p>
               </div>
+              <!-- Sexto Produto -->
               <div class="wr6 wow fadeInRight" style="visibility: hidden; animation-name: none;">
-                <h5 class="font-weight-bold text-uppercase">Dignitary Escorts</h5>
-                <p>Top-notch personal protection</p>
+                <h5 class="font-weight-bold text-uppercase">Copeira</h5>
+                <p>Serviços realizados com eficiência e agilidade</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section><!-- Fim do Terceiro Setor (Serviços) -->
       <!--Why Choose Securico-->
       <section class="section bg-gray-100 position-relative overflow-hidden">
         <div class="box-rita context-dark bg-gray-700">
           <div class="box-rita-img"><img src="./images/index-image-01-975x673.jpg" alt="" width="975" height="673">
           </div>
           <div class="box-rita-text">
-            <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">Our Advantages</div>
-            <h3 class="text-white wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Why Choose Securico</h3>
+            <div class="small-text  wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">Nossas Qualidades</div>
+            <h3 class="text-white wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Por que Qualiport?</h3>
           </div>
         </div>
         <div class="container">
           <div class="row offset-top-0 justify-content-lg-end">
             <div class="col-12 col-lg-5 section-lg">
               <div class="row row-20 text-center">
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-airplane82"></span>
-                    <h5 class="font-weight-bold text-uppercase">Prevention</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-airplane82"></span>
+                    <h5 class="font-weight-bold text-uppercase">Agilidade</h5></a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-bars48"></span>
-                    <h5 class="font-weight-bold text-uppercase">Accident protection</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-bars48"></span>
+                    <h5 class="font-weight-bold text-uppercase">Eficiência</h5></a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-circular212"></span>
-                    <h5 class="font-weight-bold text-uppercase">Crime Handling</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-circular212"></span>
+                    <h5 class="font-weight-bold text-uppercase">Competência</h5></a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-compass79"></span>
-                    <h5 class="font-weight-bold text-uppercase">Safety</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-compass79"></span>
+                    <h5 class="font-weight-bold text-uppercase">Profissionalismo</h5></a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-home133"></span>
-                    <h5 class="font-weight-bold text-uppercase">Monitoring</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-home133"></span>
+                    <h5 class="font-weight-bold text-uppercase">Experiência</h5></a>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina" href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon icon-lg text-primary fl-justicons-megaphone10"></span>
-                    <h5 class="font-weight-bold text-uppercase">Deterrence</h5></a>
+                <div class="col-sm-6 col-md-4 col-lg-6 wow fadeInRight" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"><a class="box-nina"><span class="icon icon-lg text-primary fl-justicons-megaphone10"></span>
+                    <h5 class="font-weight-bold text-uppercase">Determinação</h5></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--Professional & Independent Security Consultants-->
-      <section class="section section-md bg-default">
+      <!-- Setor Desativado (Equipe) -->
+      <section class="section section-md bg-default" style="display: none;">
         <div class="container text-center">
           <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">our team <span class="decorative-element-right"></span></div>
           <h3 class="wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Professional &amp; Independent Security Consultants</h3>
@@ -226,27 +231,27 @@
           </div>
         </div>
       </section>
-      <!--Companies that We’ve Helped-->
-      <section class="parallax-container" data-parallax-img="images/bg-secondary.jpg"><div class="material-parallax parallax"><img src="./Index_files/bg-secondary.jpg" alt="" style="display: block;"></div>
+      <!-- Quinto Setor (Clientes) -->
+      <section class="parallax-container" data-parallax-img="images/bg-secondary.jpg"><div class="material-parallax parallax"><img src="./Index_files/bg-secondary.jpg" alt="" style="display: block;" id="cases"></div>
         <div class="parallax-content section section-md">
           <div class="container text-center">
-            <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">our clients <span class="decorative-element-right"></span></div>
-            <h3 class="wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Companies that We’ve Helped</h3>
+            <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;" >nossos clientes <span class="decorative-element-right"></span></div>
+            <h3 class="wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;" >Cases</h3>
             <div class="row row-30 offset-top-0 offset-top-30 justify-content-center">
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://livedemo00.template-help.com/wt_55293/#"><img src="./Index_files/company-img-01-97x97.png" alt="" width="97" height="97"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://livedemo00.template-help.com/wt_55293/#"><img src="./Index_files/company-img-02-104x109.png" alt="" width="104" height="109"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://livedemo00.template-help.com/wt_55293/#"><img src="./Index_files/company-img-03-148x77.png" alt="" width="148" height="77"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://livedemo00.template-help.com/wt_55293/#"><img src="./Index_files/company-img-04-119x105.png" alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://escolaluminova.com.br"><img src="./images/cases/escolaluminova.png" alt="" width="120" height="120"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="#cases"><img src="./Index_files/company-img-02-104x109.png" alt="" width="104" height="109"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="#cases"><img src="./Index_files/company-img-03-148x77.png" alt="" width="148" height="77"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="#cases"><img src="./Index_files/company-img-04-119x105.png" alt="" width="119" height="105"></a></div>
             </div>
           </div>
         </div>
       </section>
       <!--Google Map-->
       <section class="section">
-        <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
+        <div class="google-map-container" data-center="R. Catulo da Paixão Cearense, 302 - Vila Jardini, Sorocaba - SP" data-zoom="15" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
           <div class="google-map"></div>
           <ul class="google-map-markers">
-            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+            <li data-location="R. Catulo da Paixão Cearense, 302 - Vila Jardini, Sorocaba - SP" data-description="Qualiport"></li>
           </ul>
         </div>
       </section>
@@ -254,16 +259,16 @@
         <div class="container">
           <div class="footer-classic-wrapper">
             <div class="left">
-              <h5 class="font-weight-regular">Follow Us on Social Networks</h5>
-              <ul class="social-link">
-                <li><a href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon mdi mdi-facebook-box icon-md"></span></a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon mdi mdi-linkedin-box icon-md"></span></a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon mdi mdi-instagram icon-md"></span></a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon mdi mdi-pinterest-box icon-md"></span></a></li>
-                <li><a href="https://livedemo00.template-help.com/wt_55293/#"><span class="icon mdi mdi-twitter-box icon-md"></span></a></li>
+              <h5 class="font-weight-regular">Nossas Redes Sociais</h5>
+              <ul class="social-link" id="network">
+                <li><a href="#network"><span class="icon mdi mdi-facebook-box icon-md"></span></a></li>
+                <li><a href="#network"><span class="icon mdi mdi-linkedin-box icon-md"></span></a></li>
+                <li><a href="#network"><span class="icon mdi mdi-instagram icon-md"></span></a></li>
+                <li><a href="#network"><span class="icon mdi mdi-pinterest-box icon-md"></span></a></li>
+                <li><a href="#network"><span class="icon mdi mdi-twitter-box icon-md"></span></a></li>
               </ul>
             </div>
-            <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2020</span><span>&nbsp;</span><span>Securico</span><span>.&nbsp;</span><span>	All Rights Reserved</span><span>.&nbsp;</span><a href="https://livedemo00.template-help.com/wt_55293/privacy-policy.html">Privacy Policy</a></p>
+            <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2020</span><span>&nbsp;</span><span>GRUPO QUALIPORT</span><span>.&nbsp;</span></p>
           </div>
         </div>
       </footer>
@@ -272,4 +277,4 @@
     <script> var key; key = "AIzaSyDTNsJRYXLw8TMqJB0MxUqVdTcfT-dC8rY"; </script>
     <script src="./Index_files/core.min.js.download"></script>
     <script src="./Index_files/script.js.download"></script>
-</body><!-- Google Tag Manager --></html>
+</body></html>
