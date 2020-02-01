@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./Index_files/bootstrap.css">
-    <link rel="stylesheet" href="./Index_files/fonts.css">
-    <link rel="stylesheet" href="./Index_files/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   <body class="">
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="./Index_files/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -31,7 +31,7 @@
                   <button style="display: none;" class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--Menu Logo Marca-->
                   <div class="rd-navbar-brand">
-                    <!--Logo Marca--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 82px !important; height:46px !important;"><img class="brand-logo-light" src="./Index_files/logo-default-165x48.png" alt="" width="82" height="24"></a>
+                    <!--Logo Marca--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 73px !important;height: 45px !important;"><img class="brand-logo-light" src="./Index_files/logo-default-165x48.png" alt="" width="82" height="24"></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -246,6 +246,50 @@
           </div>
         </div>
       </section>
+      <!-- Setor de Contato -->
+      <section class="section section-md bg-gray-100">
+        <div class="container">
+          <h3 class="text-center">Entre em contato</h3>
+          <div class="row justify-content-center">
+            <div class="col-lg-11 col-xl-9">
+              <!-- RD Mailform-->
+              <form class="rd-mailform rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="cmd/enviaemail.php" novalidate="novalidate">
+                <div class="row row-x-16 row-20">
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input form-control-has-validation" id="contact-name" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span>
+                      <label class="form-label rd-input-label" for="contact-name">Seu nome</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Required @Email"><span class="form-validation"></span>
+                      <label class="form-label rd-input-label" for="contact-email">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label rd-input-label" for="contact-message">Mensagem</label>
+                      <textarea class="form-input form-control-has-validation form-control-last-child" id="contact-message" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input form-control-has-validation" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber"><span class="form-validation"></span>
+                      <label class="form-label rd-input-label" for="contact-phone">Telefone</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap form-button">
+                      <button class="button button-block button-secondary" type="submit">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>      
       <!--Google Map-->
       <section class="section">
         <div class="google-map-container" data-center="R. Catulo da Paixão Cearense, 302 - Vila Jardini, Sorocaba - SP" data-zoom="15" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
@@ -275,6 +319,6 @@
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script> var key; key = "AIzaSyDTNsJRYXLw8TMqJB0MxUqVdTcfT-dC8rY"; </script>
-    <script src="./Index_files/core.min.js.download"></script>
-    <script src="./Index_files/script.js.download"></script>
+    <script src="./js/core.min.js"></script>
+    <script src="./js/script.js"></script>
 </body></html>
