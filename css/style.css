@@ -3707,7 +3707,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar {
 	display: none;
-	background: #111111;
+	background: #000080;
 }
 
 .rd-navbar-toggle {
@@ -4206,7 +4206,7 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1080;
-	background: #111111;
+	background: #000080;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
