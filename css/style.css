@@ -1052,7 +1052,7 @@ p [style*='max-width'] {
 }
 
 ::selection {
-	background: #ee514a;
+	background: #fff;
 	color: #ffffff;
 }
 
@@ -1113,7 +1113,7 @@ a, a:focus, a:active, a:hover {
 }
 
 a, a:focus, a:active {
-	color: #fff !important;
+	color: #000 !important;
 }
 
 a:hover {
@@ -1133,7 +1133,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-primary {
-	color: #484848;
+	color: #fff;
 }
 
 .link-primary:hover {
@@ -1485,6 +1485,7 @@ a[href*='tel'], a[href*='mailto'] {
 	justify-content: center;
 	text-align: center;
 	max-width: 280px;
+	margin-left: 20px;
 }
 
 @media (min-width: 576px) {
@@ -2224,8 +2225,8 @@ hr {
 
 .button-primary:hover, .button-primary:active, .button-primary.active {
 	color: #ffffff !important;
-	background-color: rgba(238, 81, 74, 0.3);
-	border-color: #ee514a;
+	background-color: rgba(0,0,255, 0.3);
+	border-color: #0000ff;
 }
 
 .button-primary.button-ujarak::before {
@@ -3628,7 +3629,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 20px;
 	line-height: 46px;
 	color: #ffffff;
-	background: #484848;
+	background: #fff;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
@@ -3707,7 +3708,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar {
 	display: none;
-	background: #000080;
+	background: #fff;
 }
 
 .rd-navbar-toggle {
@@ -3717,7 +3718,7 @@ html.tablet .ui-to-top {
 	height: 48px;
 	line-height: 48px;
 	cursor: pointer;
-	color: #ffffff;
+	color: #000;
 	background-color: transparent;
 	border: none;
 	display: none;
@@ -3745,7 +3746,7 @@ html.tablet .ui-to-top {
 .rd-navbar-toggle span:after, .rd-navbar-toggle span:before, .rd-navbar-toggle span {
 	width: 24px;
 	height: 4px;
-	background-color: #ffffff;
+	background-color: #000000;
 	backface-visibility: hidden;
 	border-radius: 0;
 }
@@ -3974,7 +3975,7 @@ html.tablet .ui-to-top {
 	left: 0;
 	width: 180px;
 	padding: 15px;
-	background: rgba(72, 72, 72, 0.5);
+	background: white;
 	z-index: 5;
 }
 
@@ -4206,7 +4207,7 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1080;
-	background: #000080;
+	background: #fff;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
@@ -4256,7 +4257,7 @@ html.tablet .ui-to-top {
 	padding: 4px;
 	color: #818181;
 	box-shadow: none;
-	background: #000080; /* .bkp #111111 */
+	background: #fff; 
 	border-bottom: 1px solid #d7d7d7;
 }
 
@@ -4274,8 +4275,8 @@ html.tablet .ui-to-top {
 	font-size: 14px;
 	line-height: 34px;
 	transform: translateX(-110%);
-	color: #ffffff;
-	background: #000080; /* background: #111111;  */
+	color: #000;
+	background: #fff;
 	border: 1px solid #e3e3e3;
 	box-shadow: none;
 }
@@ -9013,4 +9014,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	position: fixed;
 	width: 100%;
 	height: 100%;
+}
+
+
+.icon-md {
+    color: #0000ff;
+    text-shadow: 1px 1px 1px black;
+}
+.icon-md:hover {
+    color: #000080;
+    text-shadow: 0px 0px 2.5px black;
 }

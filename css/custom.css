@@ -1,0 +1,55 @@
+.carousel-caption {
+    right: auto;
+    text-align: left;
+    max-width: 390px;
+    padding:5px;
+    top: 30%;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bolder;
+}
+.carousel-caption span {
+    font-size: 40px;
+    color: #000;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px grey;
+    line-height: 32px;
+}
+.carousel-caption p {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.carousel-control-prev {
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(50,50,50,0.5) 51%, rgba(177,175,175,0) 100%) !important;
+}
+.carousel-control-next {
+    background: linear-gradient(90deg,  rgba(177,175,175,0) 100% , rgba(50,50,50,0.5) 51%,  rgba(25,25,25,1) 0%) !important;
+}
+* + .button {
+    margin-top: 5px;
+}
+.carousel-indicators li {
+    background-color: #0000ff;
+}
+.carousel-indicators .active {
+background-color: #000080;
+}
+p.rights {
+    margin-top: auto;
+}
+
+.selecao {
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #666666;
+}
+.selecao p {
+    font-family: 'Source Sans Pro';
+}
+.selecao a {
+    color: #0db3c7 !important;
+    font-weight: bold;
+}
