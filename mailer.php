@@ -13,7 +13,7 @@ $phon = filter_input(INPUT_POST,'phone');
 $mensagem = filter_input(INPUT_POST,'message');
 
 //Temporary Vars
-$form = 
+$MAIL_BODY = 
 '<div style="border-radius: 5px; background-color: #f2f2f2;	padding: 20px;">'.
 '<form>'.
 '<img src="https://www.detutto.com.br/custom/domain_1/image_files/1142_photo_6747.png" style="width: 40%; margin-left: 30%; margin-right: 30%; margin-bottom: 15px;">'.
@@ -28,8 +28,6 @@ $form =
 '<br><textarea name="" id="" cols="20" rows="5" style=" width: 50%; margin-left: 25%; margin-right: 25%; background: #f2f2f2; border-radius: 5px; border: 1px solid #ccc; resize: none; padding: 4px 2px 4px 8px; " disabled>'.$mensagem.'</textarea>'.
 '</form>'.
 '</div>';
-
-$MAIL_BODY = $form;
 
 //Permanent Config Vars
 define('MAIL_HOST','smtp.ingaia.com.br');
