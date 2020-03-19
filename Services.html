@@ -31,7 +31,7 @@
                   <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 46px !important; height: 46px !important;"><img class="brand-logo-light" src="./images/logo_rodape.png" alt="" width="82" height="24"></a>
+                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 63px !important; height: 46px !important;"><img class="brand-logo-light" src="./images/logo_rodape.png" alt="" width="82" height="24"></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -55,6 +55,27 @@
           </nav>
         </div>
       </header>
+      
+      <!-- Hidden Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 60px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
       <!--Service levels-->
       <section class="section section-md bg-default" style="background-color: lightgrey; display: none;">
         <div class="container">
@@ -89,36 +110,75 @@
             <!-- <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br class="d-none d-lg-block"> doloremque laudantium, totam rem aperiam, eaque</h4> -->
             <!-- <h5 class="text-gray-500">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. <br class="d-none d-lg-block">Cum sociis natoque penatibus et magnis dis parturient montes.</h5> -->
             <div class="row row-30 offset-top-0 offset-top-38">
-              <div class="col-sm-3 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".02s" style="visibility: visible; animation-delay: 0.02s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-home133"></span>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".02s" style="visibility: visible; animation-delay: 0.02s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-home133"></span>
                   <h5 class="font-weight-bold text-uppercase">Portaria</h5></a>
               </div>
-              <div class="col-sm-4 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".03s" style="visibility: visible; animation-delay: 0.03s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-bars48"></span>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".03s" style="visibility: visible; animation-delay: 0.03s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-liquid11"></span>
                   <h5 class="font-weight-bold text-uppercase">Limpeza e Conservação</h5></a>
               </div>
-              <div class="col-sm-4 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".04s" style="visibility: visible; animation-delay: 0.04s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-telephone95"></span>
+              <div class="col-sm-4 col-md-r col-xl-4 wow fadeInLeft" data-wow-delay=".04s" style="visibility: visible; animation-delay: 0.04s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 5px;" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000080"><path d="M144.28516,10.58203c-11.50586,0.08398 -35.16846,2.05762 -50.22266,15.95703c-5.47998,5.06006 -9.30127,11.25391 -11.42187,18.30859l-23.51562,3.52734l0.83984,5.54297c-19.61035,4.19922 -33.92969,10.89697 -44.00781,20.32422c-3.88428,3.65332 -5.83691,9.00732 -5.03906,14.27734c0.48291,3.2124 1.95264,6.17285 4.19922,8.56641c3.17041,3.38037 7.45361,5.03906 11.75781,5.03906c3.94727,0 7.97852,-1.46972 11.08594,-4.36719c5.24903,-4.91308 14.55029,-9.02832 27.04297,-11.92578l0.67188,5.03906l20.32422,-3.02344v19.65234h5.03906c-0.96582,12.78662 -3.48535,22.5918 -7.55859,28.55469c-5.01807,7.32764 -3.14941,17.30078 4.19922,22.33984c2.70849,1.82666 5.81592,2.85547 9.07031,2.85547c5.33301,0 10.26709,-2.64551 13.26953,-7.05469c7.66357,-11.23291 12.26172,-26.89599 13.4375,-46.69531h5.54297v-26.875h-5.375v-3.86328c1.44873,-1.78467 2.64551,-3.71631 3.52734,-5.87891c5.27002,-9.59521 24.46045,-15.74707 31.41016,-17.30078l2.51953,-9.07031c-10.16211,-9.51123 -19.84131,-12.3667 -27.71484,-12.09375c5.08106,-5.77393 11.44287,-10.09912 17.13281,-10.91797v-5.375l0.50391,-5.375c-0.37793,-0.02099 -2.87646,-0.18896 -6.71875,-0.16797zM129,22.67578c-0.5249,0.39893 -0.83984,0.67188 -0.83984,0.67188c-7.24365,7.36963 -14.21435,16.79688 -14.78125,28.21875c2.93945,2.47754 4.87109,6.13086 4.87109,10.24609c0,4.36719 -2.1206,8.31445 -5.375,10.75v8.0625h-13.77344c-2.51953,-3.04443 -7.72656,-10.68701 -7.72656,-21.5c0,-10.39307 3.2544,-18.35058 9.91016,-24.52344c7.55859,-6.9917 18.2456,-10.37207 27.71484,-11.92578zM135.04688,43c2.98145,0.10498 6.57178,0.94482 10.58203,3.19141c-5.43799,1.93164 -11.96777,4.91309 -17.63672,8.90234c-0.75586,-2.49854 -1.88965,-4.78711 -3.35937,-6.88672c0.20996,-0.77685 0.37793,-1.72168 0.67188,-2.51953c1.44873,-1.00781 4.76611,-2.85547 9.74219,-2.6875zM104.8125,53.75c-4.45117,0 -8.0625,3.61133 -8.0625,8.0625c0,4.45117 3.61133,8.0625 8.0625,8.0625c4.45117,0 8.0625,-3.61133 8.0625,-8.0625c0,-4.45117 -3.61133,-8.0625 -8.0625,-8.0625zM76.76172,56.60547l3.19141,21.16406l-5.20703,0.83984l-0.83984,-5.54297l-5.54297,1.17578c-17.51074,3.33838 -30.21338,8.50342 -37.79297,15.62109c-2.1626,2.03662 -5.54297,1.97364 -7.55859,-0.16797c-0.75586,-0.79785 -1.17578,-1.78467 -1.34375,-2.85547c-0.27295,-1.76367 0.20996,-3.48535 1.51172,-4.70312c9.25928,-8.67139 24.14551,-14.97021 44.00781,-18.64453l5.03906,-1.00781l-0.83984,-5.03906zM96.75,91.375h21.5v5.375h-5.20703l-0.16797,5.20703c-0.60889,20.19824 -4.61914,35.73535 -11.75781,46.19141c-1.6167,2.37256 -5.01807,2.96045 -7.39062,1.34375c-2.43555,-1.67969 -3.02344,-4.95508 -1.34375,-7.39062c5.87891,-8.5874 9.11231,-22.00391 9.74219,-39.80859l0.16797,-5.54297h-5.54297z"></path></g></g></svg>
                   <h5 class="font-weight-bold text-uppercase">Jardinagem</h5></a>
               </div>
-              <div class="col-sm-4 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".05s" style="visibility: visible; animation-delay: 0.05s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-bell37"></span>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".05s" style="visibility: visible; animation-delay: 0.05s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-bell37"></span>
                   <h5 class="font-weight-bold text-uppercase">Recepção</h5></a>
               </div>
-              <div class="col-sm-4 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".06s" style="visibility: visible; animation-delay: 0.06s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-portfolio21"></span>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".06s" style="visibility: visible; animation-delay: 0.06s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-portfolio21"></span>
                   <h5 class="font-weight-bold text-uppercase">Zelador</h5></a>
               </div>
-              <div class="col-sm-4 col-md-4 col-xl-2 wow fadeInLeft" data-wow-delay=".07s" style="visibility: visible; animation-delay: 0.07s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-user140"></span>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".07s" style="visibility: visible; animation-delay: 0.07s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-chef24"></span>
                   <h5 class="font-weight-bold text-uppercase">Copeira </h5></a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".08s" style="visibility: visible; animation-delay: 0.08s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-brush22"></span>
+                  <h5 class="font-weight-bold text-uppercase">Impermebialização <br> de Pisos </h5></a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".09s" style="visibility: visible; animation-delay: 0.09s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary"><i class="fa fa-calendar-o" style="font-style: normal;"></i></span>
+                  <h5 class="font-weight-bold text-uppercase">Eventos </h5></a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-xl-4 wow fadeInLeft" data-wow-delay=".10s" style="visibility: visible; animation-delay: 0.10s; animation-name: fadeInLeft;"><a class="box-nina" href="services.html#"><span class="icon icon-lg text-primary fl-justicons-brush22"></span>
+                  <h5 class="font-weight-bold text-uppercase">Limpeza pós-obra</h5></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+      <div id="sp-service-wrapper" class="nossa_rede" style="padding: 48px 0; color: white; background: url('./images/bg_rede.jpg');">
+        <div id="rede" class="container" align="center">
+        <h1 class="text-white">NOSSA REDE</h1>
+        <p>Nosso objetivo é garantir os seus resultados</p>
+        </div>
+        <div class="container" align="center">
+        <div class="row">
+        <div data-toggle="modal" data-target=".modal" data-modal-title="Gestão Operacional" data-modal-content="<img class='w-100' src='./images/rede/gestao_large.jpg'><br><br>Inspecionada diretamente por nosso Diretor Administrativo, o Suporte Operacional do Grupo Qualiport visa proporcionar a mais ampla cobertura, cuja efetividade é garantida por nossos Supervisores treinados e aptos a resolver prontamente qualquer eventualidade que ocorra nas unidades dos nossos clientes, pois prestamos assistência 24 horas, orientando e instruindo todos os profissionais da corporação para uma prestação de serviço de excelência, de acordo com as particularidades de cada cliente. O controle dos nossos serviços é realizado por meio de visitas presencias e periódicas.<br><br>Contamos com uma reserva técnica eficiente para a pronta substituição de nossos colaboradores em caso de falta, licença e afastamento; ou ainda sempre que verificada, pelo contratante, a necessidade de substituição de funcionpario, cuja atuação tenha sido considerada insatisfatória aos interesses do serviço, afinal, assumimos com os nossos clientes o compromisso com o resultado." class="col-3"><img src="./images/rede/item_1.jpg" alt="">
+        <h4>GESTÃO<br> OPERACIONAL</h4>
+        </div>
+        <div data-toggle="modal" data-target=".modal" data-modal-title="Veículo de Apoio" data-modal-content="<img class='w-100' src='./images/rede/veiculo_large.jpg'><br><br>Como implemento ao suporte operacional, contamos com veículos nnovos, devidamente identificados, utilizados tanto para as visitas periódicas dos nossos Supervisores, como para atender às ocorrências que eventualmente se fizerem necessárias." class="col-3"><img src="./images/rede/item_2.jpg" alt="">
+        <h4>VEÍCULO <br>DE APOIO</h4>
+        </div>
+        <div data-toggle="modal" data-target=".modal" data-modal-title="Processo de Seleção" data-modal-content="<img class='w-100' src='./images/rede/selecao_large.jpg'><br><br>O processo de seleção é um dos grandes diferenciais do GRUPO QUALIPORT.<br><br>Os contratados passam por um rigoroso processo de seleção voltado para a busca de profissionais que seguem um perfil determinado para atender às necessidades de cada cliente, baseado na experiência e permanente atualização perante a demanda do mercado.<br><br>O GRUPO QUALIPORT tem um dos menores índices de rotatividade do mercado.<br><br>O potencial de cada um é constantemente avaliado e há ainda um programa interno de promoções para o aproveitamento dos melhores profissionais." class="col-3"><img src="./images/rede/item_3.jpg" alt="">
+        <h4>PROCESSO <br>DE SELEÇÃO</h4>
+        </div>
+        <div data-toggle="modal" data-target=".modal" data-modal-title="Por que Terceirizar Serviços em sua Empresa ou Condomínio?" data-modal-content="<img class='w-100' src='./images/rede/porque_large.jpg'><br><br>A terceirização de serviços é uma realidade, pois a conotação de praticidade em processos e redução de custos diversos é ponto indiscutível para quem opta por esta modalidade. Os impactos que a Terceirização trará em seu negócio são consideravelmente positivos. Os principais benefícios incluem:<br><br><b>A QUALIDADE</b> - pois ao contar com a parceria de uma empresa qualificada, que se dedica exclusivamente às atividades meio que fomentam seu negócio, tais como, a limpeza, a recepção, a zeladoria; os serviços desempenhados serão da melhor qualidade, por contar com métodos e processos próprios e uma gestão focada em resultados, o que refletirá no máximo de produtividade da equipe, consequentemente, levando a melhores resultados.<br><br><b>FOCA NA ATIVIDADE FIM</b> - ao terceirizar os serviços meio em sua empresa, o cliente fica mais &ldquo;liberado&ldquo; para pensar no crescimento e manutenção do negócio. Suas perspectivas estarão inteiramente voltadas para a consecuçao da sua atividade principal com êxito.<br><br><b>REPOSIÇÃO IMEDIATA DE FUNCIONÁRIO</b> - No caso de faltas, algo muito comum nesse setor, a empresa contratada conta com uma equipe de reserva técnica que permite fazer rapidamente a reposição do funcionário faltante, não deixando desfalcado os serviços que implementam a atividade principal do cliente<br><br><b>CUSTO E CONTROLE</b> - Uma vantagem evidente em se terceirizar a mão-de-obra é o controle de custos da Empresa ou condomínio contratante, que consegue otimizar investimentos em prestação de serviços, uniformes e equipamentos.<br><br><h5>CONDIÇÕES GERAIS</h5><b>Dos uniformes e EPI:</b> Nossos funcionários se apresentarão aos serviços uniformizados, com todos os EPI's pertinentes às atividades exercidas e identificados através de crachá.<br><br><b>Dos benefícios:</b> Mensalmente serão fornecidos aos nossos clientes:<ul list-style='disc'><li>O desdobramento detalhado dos encargos sociais, comprovantes de recolhimento de FGTS, obrigações previdenciárias, impostos incidentes sobre a fatura, bem como do pagamento dos salários dos empregados alocados no escopo fornecido, recebimento por parte dos empregados dos vales transporte e refeição;</li><li>Cópia da ficha de registro do empregado;</li><li>Cópia do ASO dos respectivos funcionários lotados no posto de serviço.</li></ul><br><br><b>Da forma de contratação e pagamento:</b> Ordinariamente, os contratos terão validade de um ano, podendo ser rescindidos mediante aviso prévio de 30 dias. As cláusulas contratuais serão livremente ajustadas entre as partes, inclusive, no tocante ao prazo de vigência, caso o contratante assim solicitar.<br><br>O prazo de vencimento das faturas será todo primeiro dia útil do mês subsequente ao da execução dos serviços. O preço total mensal será realinhado toda vez em que houver reajuste salarial da Categoria determinado por força de Convenção ou Dissídio Coletivo de Trabalho firmado entre os Sindicatos Patronal e Laboral; ou por aumentos oriundos de determinações governamentais, ou quando por decreto do Governo, ou ainda, quando da variação de encargos ou tributos, bem como da criação de benefícios e abonos obrigatórios." class="col-3"><img src="./images/rede/item_4.jpg" alt="">
+        <h4>POR QUE <br>TERCEIRIZAR?</h4>
+        </div>
+        </div>
+        </div>
+        <div class="container" align="center">
+        <p>Com um expressivo efetivo, o GRUPO QUALIPORT, conta com profissionais altamente qualificados na prestação de serviços de: portaria, limpeza, jardinagem, recepcionista, zeladoria, copeira e serviços gerais.</p>
+        </div>
+        </div>
+
+
       <!--Services Overview-->
       <section class="section bg-gray-100 position-relative overflow-hidden">
         <div class="box-rita context-dark bg-gray-700">
-          <div class="box-rita-img"><img src="./images/services-img-01-990x610.jpg" style="filter: grayscale(100%); filter: gray; -webkit-filter: grayscale(100%);" alt="" width="990" height="610">
+          <div class="box-rita-img"><img src="./images/61fc57_941a6275810d483b981984348d07f5f9_mv2.webp" alt="" width="990" height="610">
           </div>
-          <div class="box-rita-text">
+          <div class="box-rita-text" style="text-shadow: 2px 2px 2px white !important;">
             <div class="small-text wow fadeIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn; color: black !important;">Serviços de confiança<!--Services overview--></div>
-            <h3 class="text-white wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn; color: black !important;">Nossos pontos fortes</h3>
+            <h3  class="text-white wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn; color: black !important;">Nossos pontos fortes</h3>
           </div>
         </div>
         <div class="container">
@@ -179,4 +239,15 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+      $('.modal').on('show.bs.modal', function (e) {
+        var button = $(e.relatedTarget);
+        console.log(button);
+        var title = button.data('modal-title');
+        var content = button.data('modal-content');
+        var modal = $(this);
+        modal.find('.modal-title').text(title);
+        modal.find('.modal-body').html(content);
+      })
+    </script>
 </body><!-- Google Tag Manager --></html>

@@ -57,6 +57,20 @@
  *     4.19 Bootstrap Modal
  */
 /** @group Base */
+
+.nossa_rede h4 {
+    border: 1px solid #fff;
+    min-height: 45px;
+    padding-top: 20px;
+    padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	color: #ffffff;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+
 .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
@@ -113,7 +127,7 @@ ol {
 
 ul li,
 ol li {
-	display: block;
+	display: list-item;
 }
 
 dl {
@@ -2067,7 +2081,7 @@ img {
 }
 
 .table-custom.table-custom-striped tbody tr:nth-of-type(odd) td {
-	background: transparent;
+	background: #fff;
 }
 
 .table-custom.table-custom-striped tbody tr:nth-of-type(even) td {
@@ -4089,12 +4103,12 @@ html.tablet .ui-to-top {
 
 .rd-navbar-static .rd-megamenu-list-link {
 	color: #000000;
-	background: transparent;
+	background: #fff;
 }
 
 .rd-navbar-static .rd-megamenu-list-link:hover {
 	color: #ee514a;
-	background: transparent;
+	background: #fff;
 }
 
 .rd-navbar-static * + .rd-megamenu-list {
@@ -5108,11 +5122,11 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .page-header-transparent .rd-navbar {
-	background: transparent;
+	background: #fff;
 }
 
 .page-header-transparent .rd-navbar--is-stuck {
-	background: #111111;
+	background: #fff;
 }
 
 .page-header-transparent.rd-navbar-classic.rd-navbar-static .rd-navbar-main {

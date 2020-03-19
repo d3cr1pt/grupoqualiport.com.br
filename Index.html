@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/custom.css">
+>
     <script>
+      
       var parts = window.location.search.substr(1).split("&");
       var $_GET = {};
       for (var i = 0; i < parts.length; i++) {
@@ -24,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   <body class="">
+    
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="./images/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader loaded">
       <div class="preloader-body">
@@ -46,7 +49,7 @@
                   <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--Menu Logo Marca-->
                   <div class="rd-navbar-brand">
-                    <!--Logo Marca--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 45px !important;height: 45px !important;"><img class="brand-logo-light" src="./images/logo_rodape.png" alt="" width="82" height="24"></a>
+                    <!--Logo Marca--><a class="brand" href="index.html"><img class="brand-logo-dark" src="./images/logo_rodape.png" alt="" style="width: 63px !important;height: 45px !important;"><img class="brand-logo-light" src="./images/logo_rodape.png" alt="" width="82" height="24"></a>
                   </div>
                 </div>
                 <div class="rd-navbar-main-element">
@@ -70,6 +73,26 @@
           </nav>
         </div>
       </header>
+      <!-- Hidden Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
       <!-- Setor 0,5: Slider -->
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -162,43 +185,63 @@
           </h5>
           <div class="row row-30 offset-top-0 offset-top-38">
             <!-- Primeiro Icone (Segurança) -->
-            <div class="col-sm-6 col-lg-3 wow fadeInRight icon-decorative-3" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Porteiro" data-modal-content="<img class='w-100 d-block' src='./images/modal/portaria_large.jpg'><br>O porteiro é o primeiro a recepcionar os visitantes, funcionários e moradores.<br><br>Logo, os profissionais que exercem essa profissão devem ser pessoas de extrema confiança. Por isso, adotamos um rigoroso processo seletivo e preparamos nossos profissionais com treinamento específico aliado à perspectiva e necessidade de cada cliente, com supervisionamento criterioso e frequente.">
               <div class="box-icon">
-                <span class="icon text-primary icon-xxl icon-decorative ">
+                <span class="icon text-primary icon-xxl ">
                   <img src="./images/icons/portaria.png" alt="">
                 </span>
                 <h5 class="font-weight-bold text-uppercase">PORTEIRO</h5>
-                <h6 class="font-weight-regular box-1">Nosso time de porteiros são completamente treinados, e possuem conhecimento e experiência para cuidar do seu bem.</h6>
+                <h6 class="font-weight-regular box-1">O porteiro é o primeiro a recepcionar os visitantes, funcionários e moradores.</h6>
               </div>
             </div>
             <!-- Segundo Icone (Equipe de Limpeza) -->
-            <div class="col-sm-6 col-lg-3 wow fadeInRight icon-decorative-3" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Limpeza e Conservação" data-modal-content="<img class='w-100' src='./images/modal/limpeza_large.jpg'><br><br>Estar em um ambiente limpo e higienizado sempre causa segurança e bem-estar. E para lhe atender com alto padrão de qualidade, o GRUPO QUALIPORT seleciona profissionais capacitados, educados, com boa postura e comprometimento com a limpeza e a organização de sua empresa e condomínio.<br><br> Além disso, nosso trabalho envolve:<br><br><ul style='list-style: inside'><li>Planejamento adequado das atividades</li><li>Dimensionamento do quadro ideal</li><li>Definição dos produtos ideiais para cada situação e finalidade</li><li>Uso de equipamentos apropriados</li><li>Treinamento da equipe sobre o serviço e seus fundamentos</li><li>Desenvolvimento, na equipe, de senso de responsabilidade ao serviço e as consequências na saúde dos usuários</li><li>Saber com clareza, a importância do uso de EPI</li><li>Conhecer a legislação e suas atualizações</li></ul><br>Nós cuidamos da limpeza e higienização do ambiente corporativo para que você tenha que se preocupar só com o seu negócio. ">
               <div class="box-icon">
-                <span class="icon text-primary icon-xxl icon-decorative">
+                <span class="icon text-primary icon-xxl ">
                   <img src="./images/icons/limpeza.png" alt="">
                 </span>
                 <h5 class="font-weight-bold text-uppercase">Equipe de Limpeza</h5>
-                <h6 class="font-weight-regular box-1">Nossa equipe pretativa e prepara está sempre disponivel, e fará tudo na maior rapidez, para manter todo o espaço profissional limpo.</h6>
+                <h6 class="font-weight-regular box-1">Estar em um ambiente limpo e higienizado sempre causa segurança e bem-estar.</h6>
               </div>
             </div>
             <!-- Terceiro Icone (Jardinagem) -->
-            <div class="col-sm-6 col-lg-3 wow fadeInRight icon-decorative-3" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Jardinagem" data-modal-content="<img src='./images/modal/jardinagem_large.jpg' class='w-100'><br><br>Preservaar as áreas verdes de sua empresa ou do condomínio que reside, é uma maneira prática e fácil de passar uma boa imagem aos visitantes, aos clientes ou aos moradores.<br><br>As tarefas diárias são realizadas por profissionais experientes e que trabalham com todas as ferramentas necessárias, como enxada, pá, rastelos, cortador manual, etc.<br><br>Com isso, o GRUPO QUALIPORT garante um serviço de alta qualidade e que, certamente, transformará o ambiente em sua empresa ou condomínio. ">
               <div class="box-icon">
-                <span class="icon text-primary icon-xxl icon-decorative">
+                <span class="icon text-primary icon-xxl ">
                   <img src="./images/icons/jardinagem.png" alt="">
                 </span>
                 <h5 class="font-weight-bold text-uppercase">Jardinagem</h5>
-                <h6 class="font-weight-regular box-1">Nós cuidamos para que a paisagem do seus negócios, possam sempre passar a melhor impressão de todo nosso serviço.</h6>
+                <h6 class="font-weight-regular box-1">Preservar as áreas verdes de sua empresa ou do condomínio que reside, é uma maneira prática e fácil de passar uma boa imagem aos visitantes.</h6>
               </div>
             </div>
             <!-- Quarto Icone (Portaria) -->
-            <div class="col-sm-6 col-lg-3 wow fadeInRight icon-decorative-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Recepção" data-modal-content="<img class='w-100' src='./images/modal/recepcao_large.jpg'><br><br>Um atendimento ágil e que receba seus clientes com alto padrão de qualidade, sempre faz a diferença na imagem que sua empresa deseja passar.<br><br>Pensando nisso, a tercerização dos serviços de recepção e telefone é uma alternativa eficaz, pois todas as profissionais possuem conhecimento de informática, boa dicção e trabalham devidamente uniformizadas. Acreditamos que o funcionário bem selecionado, orientado, com treinamento constante e conhecedor de suas atividades, possa preencher esta lacuna existente em grande parte das empresas.">
               <div class="box-icon">
-                <span class="icon text-primary icon-xxl icon-decorative">
+                <span class="icon text-primary icon-xxl ">
                   <img src="./images/icons/recepcao.png" alt="">
                 </span>
                 <h5 class="font-weight-bold text-uppercase">Recepção</h5>
-                <h6 class="font-weight-regular box-1">Atendimento ágil de alta qualidade visando o conforto de seus clientes, para manter a sua imagem!</h6>
+                <h6 class="font-weight-regular box-1">Um atendimento ágil e que receba seus clientes com alto padrão de qualidade, sempre faz a diferença na imagem que sua empresa deseja passar.</h6>
+              </div>
+            </div>
+            <!-- Quinto Icone (Portaria) -->
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Zelador" data-modal-content="<img class='w-100' src='./images/modal/zelador_large.jpg'><br><br>Bastante solicitada por aqueles que buscam por profissionais de alto nível a um ótimo custo-benefício, a terceirização de zelador garante em seu empreendimento a presença de alguém para atuar com primazia em várias vertentes.<br><br>Além de zelar pela segurança, o contrato de terceirização de zelador oferece um profissional capaz de atender e controlar a movimentação de pessoas e veículos, receber objetos, mercadorias, materiais e equipamentos ou de realizar pequenos reparos.">
+              <div class="box-icon">
+                <span class="icon text-primary icon-xxl ">
+                  <img src="./images/icons/zelador.png" alt="">
+                </span>
+                <h5 class="font-weight-bold text-uppercase">ZELADOR</h5>
+                <h6 class="font-weight-regular box-1">Bastante solicitada por aqueles que buscam por profissionais de alto nível a um ótimo custo-benefício.</h6>
+              </div>
+            </div>
+            <!-- Sexta Icone (Portaria) -->
+            <div class="col-sm-6 col-lg-4 wow fadeInRight icon-decorative-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;" data-toggle="modal" data-target=".modal" data-modal-title="Copeira" data-modal-content="<img class='w-100' src='./images/modal/copeira_large.jpg'><br><br>Nossos serviços terceirizados de copa são prestados de forma a satisfazer totalmente as exigências dos clientes, através de treinamentos que enfatizam a cordialidade, simpatia e, sobretudo, a discrição na execução dos serviços, assim oferecendo um diferencial no atendimento e modo de atuação.">
+              <div class="box-icon">
+                <span class="icon text-primary icon-xxl ">
+                  <img src="./images/icons/copeira.png" alt="">
+                </span>
+                <h5 class="font-weight-bold text-uppercase">COPEIRA</h5>
+                <h6 class="font-weight-regular box-1">Nossos serviços terceirizados de copa são prestados de forma a satisfazer totalmente as exigências dos clientes.</h6>
               </div>
             </div>
           </div>
@@ -252,11 +295,11 @@
       <!--Why Choose Securico-->
       <section class="section bg-gray-100 position-relative overflow-hidden">
         <div class="box-rita context-dark bg-gray-700">
-          <div class="box-rita-img"><img src="./images/index-image-01-975x673.jpg" alt="" width="975" height="673">
+          <div class="box-rita-img"><img src="./images/index.png" alt="" width="975" height="673">
           </div>
           <div class="box-rita-text">
-            <div class="small-text  wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">Nossas Qualidades</div>
-            <h3 class="text-white wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Por que Qualiport?</h3>
+            <div class="small-text text-black wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none; color: black; text-shadow: 2px 2px 2px #fff;">Nossas Qualidades</div>
+            <h3 class="text-black wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none; color: black; text-shadow: 2px 2px 2px #fff;">Por que Qualiport?</h3>
           </div>
         </div>
         <div class="container">
@@ -286,6 +329,15 @@
           </div>
         </div>
       </section>
+      <section class="parallax-container" data-parallax-img="images/bg_solicite.jpg"><div class="material-parallax parallax"><img src="./images/bg_solicite.jpg" alt="" style="display: block;" id="cases"></div>
+        <div class="parallax-content section section-md">
+          <div class="container text-center">
+            <div class="text-uppercase text-white wow fadeIn" data-wow-delay=".2s" style="font-size: large ;visibility: hidden; animation-delay: 0.2s; animation-name: none;" >solicite uma visita </div>
+            <h6 class="text-white wow fadeIn" data-wow-delay=".3s" style="margin-top: 10px; font-size: 16px; font-weight: 300; font-family: 'Source Sans Pro'; visibility: hidden; animation-delay: 0.3s; animation-name: none;" >Teremos o maior prazer em lhe fazer uma visita e lhe apresentar nosso serviços.</h3>
+              <p style="text-align: center; font-weight: 700; font-family: 'Source Sans Pro'; font-size: 16px; color: white;"><strong>O&nbsp;bem é seu, o cuidado é nosso</strong></p>
+          </div>
+        </div>
+      </section>
       <!-- Quinto Setor (Clientes) -->
       <section class="parallax-container" data-parallax-img="images/bg-secondary.jpg"><div class="material-parallax parallax"><img src="./images/bg-secondary.jpg" alt="" style="display: block;" id="cases"></div>
         <div class="parallax-content section section-md">
@@ -293,10 +345,19 @@
             <div class="small-text decorative-element-left wow fadeIn" data-wow-delay=".2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;" >nossos clientes <span class="decorative-element-right"></span></div>
             <h3 class="wow fadeIn" data-wow-delay=".3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;" >Cases</h3>
             <div class="row row-30 offset-top-0 offset-top-30 justify-content-center">
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://escolaluminova.com.br"><img src="./images/cases/escolaluminova.png" alt="" width="120" height="120"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="http://www.luft.com.br/"><img src="./images/cases/luft.png" alt="" width="104" height="109"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.loggi.com/"><img src="./images/cases/loggi.png" alt="" width="148" height="77"></a></div>
-              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.faculdadeipanema.com.br/"><img src="./images/cases/faculdadeipanema.jpg" alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://escolaluminova.com.br">                 <img src="./images/cases/escolaluminova.png"                alt="" width="120" height="120"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.mapconstrucoes.com.br/">                        <img src="./images/cases/mapconstrucoes.png"                         alt="" width="148" height="77"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.faculdadeipanema.com.br/">          <img src="./images/cases/faculdadeipanema.jpg"              alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.caesegatosveterinaria.com.br/">     <img src="./images/cases/caesegatosveterinaria.com.br.jpg"  alt="" width="105" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.residencialvaleverde.com.br/">      <img src="./images/cases/residencialvaleverde.com.br.png"   alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.agencialogin.com.br/">              <img src="./images/cases/agencialogin.com.br.jpg"           alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.detutto.com.br/">                   <img src="./images/cases/detutto.com.br.jpg"                alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.hoteljardimemilia.com.br/">         <img src="./images/cases/hoteljardimemilia.com.br.png"      alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.devitaodontologico.com.br/">        <img src="./images/cases/devita.jpg"                        alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.brtsorocaba.com.br/">               <img src="./images/cases/brtsorocaba.jfif"                  alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.doutorsaudevialux.com.br/">         <img src="./images/cases/doutorsaude.com.br.jfif"           alt="" width="119" height="105"></a></div>
+              <div class="col-sm-6 col-lg-3 box-zina wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"><a href="https://www.octaempreendimentos.com.br/">       <img src="./images/cases/octaempreendimentos.com.br.png"    alt="" width="119" height="105"></a></div>
+
             </div>
           </div>
         </div>
@@ -404,4 +465,15 @@
           });
       });
     </script>
+        <script>
+          $('.modal').on('show.bs.modal', function (e) {
+            var button = $(e.relatedTarget);
+            console.log(button);
+            var title = button.data('modal-title');
+            var content = button.data('modal-content');
+            var modal = $(this);
+            modal.find('.modal-title').text(title);
+            modal.find('.modal-body').html(content);
+          })
+        </script>
 </body></html>
